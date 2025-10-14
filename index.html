@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Воздушные шары в Алматы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero-section" id="glavnaya">
+        <div class="language-switcher">
+            <a href="#" class="lang-active">RU</a> | <a href="#">KZ</a>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Магазин воздушных<br>шаров в Алматы</h1>
+                <nav class="main-nav">
+                    <div class="nav-row">
+                        <a href="#katalog" class="nav-button">Варианты</a>
+                    </div>
+                    <div class="nav-row">
+                        <a href="#o-nas" class="nav-button">О НАС</a>
+                    </div>
+                    <div class="nav-row">
+                        <a href="#svyaz" class="nav-button">Связаться</a>
+                    </div>
+                </nav>
+            </div>
+        
+            <!-- Модальді терезе: суретті басқанда ашылатын блок -->
+            <div class="hero-image-placeholder">
+                <img src="images/balloon1.jpeg" alt="Фото шаров" class="open-modal">
+            </div>
+        </div>
+    </header>
+
+    <section id="katalog" class="catalog-section">
+        <h2>Наш ассортимент шаров</h2>
+
+        <div class="product-grid">
+            
+            <div class="product-item item-1">
+                <div class="product-image-placeholder">
+                    <img src="images/balloon2.jpeg" alt="Шар 2" class="open-modal">
+                </div>
+                <h3>Название Шара 1</h3>
+                <p>Текст-текст-текст. Краткая информация о фольгированных шарах и их особенностях. Идеальны для любого праздника.</p>
+            </div>
+
+            <div class="product-item item-2">
+                <div class="product-image-placeholder">
+                    <img src="images/balloon3.jpeg" alt="Шар 3" class="open-modal">
+                </div>
+                <h3>Название Шара 2</h3>
+                <p>Текст-текст-текст. Описание латексных шаров, их долговечности и разнообразия цветов. Экологичный выбор.</p>
+            </div>
+            
+            <div class="product-item item-3">
+                <div class="product-image-placeholder">
+                    <img src="images/balloon4.jpeg" alt="Шар 4" class="open-modal">
+                </div>
+                <h3>Название Шара 3</h3>
+                <p>Текст-текст-текст. Информация о наборах и композициях из шаров. Готовые решения для быстрого оформления.</p>
+            </div>
+            
+            <div class="product-item item-4">
+                <div class="product-image-placeholder">
+                    <img src="images/balloon5.jpeg" alt="Шар 5" class="open-modal">
+                </div>
+                <h3>Название Шара 4</h3>
+                <p>Текст-текст-текст. Описание шаров с гелием и их временем полета. Добавьте радости и легкости вашему событию.</p>
+            </div>
+            
+            <div class="product-item item-5">
+                <div class="product-image-placeholder">
+                    <img src="images/balloon6.jpeg" alt="Шар 6" class="open-modal">
+                </div>
+                <h3>Название Шара 5</h3>
+                <p>Текст-текст-текст. Описание шаров с принтами или индивидуальными надписями. Сделайте подарок уникальным.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="o-nas" class="about-section">
+        <h2>О нас</h2>
+        <div class="about-content">
+            <div class="about-image-placeholder">
+                <img src="images/team-photo.jpeg" alt="Фото нашей команды" class="open-modal"> <!-- Фото команды -->
+            </div>
+            <div class="about-text">
+                <h3>Информация о магазине</h3>
+                <p>Мы — ваш надежный партнер в мире воздушных шаров в Алматы...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="svyaz" class="contact-section">
+    <h2>Связаться с нами</h2>
+    <div class="contact-links">
+        
+        <!-- Instagram батырмасы -->
+        <a href="https://instagram.com/smanadil" target="_blank" class="contact-button instagram">
+            <i class="fab fa-instagram"></i> Instagram - Чтобы увидеть больше ассортимент
+        </a>
+
+        <!-- WhatsApp батырмасы -->
+        <a href="https://wa.me/87788745750?text=Здравствуйте,%20я%20хотел(а)%20заказать%20шар" target="_blank" class="contact-button whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp - Чтобы заказать
+        </a>
+
+
+        
+        <a href="tel:+77001234567" class="contact-button phone">
+            <i class="fas fa-phone"></i> Телефон: +7 (700) 123-45-67
+        </a>
+        
+        <!-- "Показать 2ГИС" батырмасы -->
+        <button class="show-2gis-btn">Показать 2ГИС</button>
+        
+    </div>
+    <p class="copyright">&copy; 2024 Магазин воздушных шаров в Алматы. Все права защищены.</p>
+</footer>
+
+<!-- Модальді терезе -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+<!-- JavaScript файлын қосу -->
+<script src="script.js"></script>
+
+</body>
+</html>
