@@ -1,0 +1,428 @@
+/* Жалпы стильдер */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth; /* Бір бөлімнен екіншісіне жұмсақ жылжу */
+}
+
+h1, h2, h3 {
+    color: #ff69b4; /* Қызғылт түс, шарларға ұқсас */
+}
+
+section {
+    padding: 60px 5%;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 1. Басты бет (Header) стилі */
+.hero-section {
+    background-color: #f7e0eb; /* Ашық қызғылт фон */
+    min-height: 500px;
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Центрируем контент */
+    position: relative;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    font-size: 1.1em;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #ff69b4;
+    padding: 5px;
+}
+
+.language-switcher .lang-active {
+    font-weight: bold;
+    border-bottom: 2px solid #ff69b4;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.hero-text {
+    max-width: 100%;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    text-align: center;
+    line-height: 1.2; /* Уменьшаем расстояние между строками */
+}
+
+.hero-text h1 br {
+    display: block;
+    content: "";
+    margin-top: 10px;
+}
+
+/* Блок для навигационных кнопок */
+.main-nav {
+    margin-top: 30px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: center; /* Центрируем кнопки */
+    margin-bottom: 15px;
+}
+
+.nav-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 5px;
+    font-size: 1.1em;
+    text-align: center;
+    width: 200px; /* Задаем одинаковую ширину для всех кнопок */
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background-color: #e55a9f;
+}
+
+
+/* Увеличение размера изображения в hero-секции */
+.hero-image-placeholder {
+    width: 100%;
+    max-width: 450px; /* Увеличиваем размер */
+    min-height: 350px; /* Увеличиваем минимальную высоту */
+    background-color: #ffe8f2;
+    border: 1px dashed #ff69b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* 2-5. Каталог стилі */
+.catalog-section {
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease;
+    background-color: #ffffff;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.product-image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #ccc;
+    color: #888;
+}
+
+/* 6. О нас стилі */
+.about-section {
+    background-color: #e6f7ff;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-image-placeholder {
+    width: 35%;
+    min-height: 350px;
+    background-color: #cceeff;
+    border: 1px solid #00aaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 60%;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image-placeholder {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+/* 7. Байланыс (Footer) стилі */
+.contact-section {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 5%;
+}
+
+.contact-section h2 {
+    color: #ffb3e6;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto 30px;
+}
+
+.contact-button {
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.contact-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
+    background-color: #C13584;
+}
+
+.phone {
+    background-color: #ff69b4;
+    background-color: #ff4d95;
+}
+
+.address-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.address-info i {
+    margin-right: 10px;
+    color: #ffb3e6;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+/* 1. Hero-секциядағы сурет */
+.hero-image-placeholder img {
+    width: 100%;         /* Сурет экранның толық енін алады */
+    height: auto;        /* Биіктігі пропорционалды түрде өзгеріп отырады */
+    max-width: 450px;    /* Максималды ені */
+    max-height: 350px;   /* Максималды биіктігі */
+    object-fit: cover;   /* Суреттің кесілгенін болдырмау үшін */
+    transition: transform 0.3s ease; /* Жұмсақ анимация */
+}
+
+.hero-image-placeholder img:hover {
+    transform: scale(1.1); /* Суретті үлкейту */
+}
+
+/* 2. Продукция блоктарындағы сурет */
+.product-image-placeholder img {
+    width: 100%;         /* Сурет толық енін алады */
+    height: auto;        /* Биіктігі пропорционалды */
+    max-width: 300px;    /* Блоктың өлшеміне байланысты суреттің максималды ені */
+    max-height: 200px;   /* Суреттің максималды биіктігі */
+    object-fit: cover;   /* Сурет орнатылған блокқа сәйкес келуі үшін */
+    transition: transform 0.3s ease; /* Жұмсақ анимация */
+}
+
+.product-image-placeholder img:hover {
+    transform: scale(1.1); /* Суретті үлкейту */
+}
+
+/* 3. О нас суретінің биіктігі */
+.about-image-placeholder img {
+    width: 100%;        /* Сурет толық енімен */
+    height: auto;       /* Биіктігі пропорционалды */
+    max-width: 350px;   /* Максималды ені */
+    max-height: 250px;  /* Суреттің максималды биіктігі */
+    object-fit: cover;  /* Сурет орнатылған блокқа сәйкес келуі үшін */
+    transition: transform 0.3s ease; /* Жұмсақ анимация */
+}
+
+.about-image-placeholder img:hover {
+    transform: scale(1.1); /* Суретті үлкейту */
+}
+/* Модальды терезе */
+.modal {
+    display: none; /* Әзірге көрсетпеу */
+    position: fixed;
+    z-index: 1; /* Элементтер үстінен шығуы үшін */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Жартылай қараңғы фон */
+    justify-content: center; /* Ортасына шығару */
+    align-items: center; /* Ортасына шығару */
+    display: flex; /* Ортасына шығару үшін */
+}
+
+/* Ортасында көрсетілетін сурет */
+.modal-content-wrapper {
+    max-width: 90%;  /* Максималды ені 90% */
+    max-height: 80%; /* Максималды биіктігі 80% */
+    overflow: hidden; /* Сурет сыртқа шықпау үшін */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Сурет биіктігі экранның 80%-ы */
+    max-width: 90%;  /* Суреттің максималды ені 90% */
+    object-fit: contain; /* Сурет пропорционалды түрде өзгеріп, шетке шығып кетпейді */
+}
+
+/* Жабу белгісінің стилі */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* "Показать 2ГИС" батырмасының стилі */
+/* Батырманың жалпы стилі */
+.show-2gis-btn {
+    background-color: #25D366;  /* WhatsApp сияқты жасыл түске бояймыз */
+    color: white;
+    padding: 15px 30px;         /* Паддингті ұлғайтып, үлкен ету */
+    border-radius: 8px;         /* Жұмсақ бұрыштар */
+    font-weight: bold;
+    font-size: 1.2em;           /* Шрифт мөлшерін арттырамыз */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; /* Әсерлер */
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;                 /* Кнопканы толық етіп жасаймыз */
+    max-width: 300px;            /* Максималды ені */
+    display: inline-block;       /* Батырманың блоктық элемент болғаны үшін */
+}
+
+.show-2gis-btn:hover {
+    background-color: #128C7E;  /* Батырма үстінен көрсеткенде түсті өзгерту */
+    transform: scale(1.05);      /* Батырманы аздап үлкейту */
+}
+
+/* Жоғары батырмалардың стилі (WhatsApp, Instagram және телефон) */
+.contact-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.whatsapp {
+    background-color: #25D366;  /* WhatsApp түсі */
+}
+
+.instagram {
+    background-color: #C13584;  /* Instagram түсі */
+}
+
+.phone {
+    background-color: #ff69b4;  /* Телефон батырмасының түсі */
+}
+
+/* Батырмалардың hover әсері */
+.contact-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
