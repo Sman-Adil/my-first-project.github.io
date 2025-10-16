@@ -3,25 +3,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #c0c0c0;
     color: #333;
     scroll-behavior: smooth; /* Бір бөлімнен екіншісіне жұмсақ жылжу */
 }
 
 h1, h2, h3 {
-    color: #ff69b4; /* Қызғылт түс, шарларға ұқсас */
+    color: #1A2A6C; /* Қызғылт түс, шарларға ұқсас */
 }
 
 section {
     padding: 60px 5%;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: #c0c0c0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* 1. Басты бет (Header) стилі */
 .hero-section {
-    background-color: #f7e0eb; /* Ашық қызғылт фон */
+    background-color: #c0c0c0; /* Ашық қызғылт фон */
     min-height: 500px;
     padding: 40px 5%;
     display: flex;
@@ -30,30 +30,25 @@ section {
     align-items: center; /* Центрируем контент */
     position: relative;
 }
-
-.language-switcher {
-    position: absolute;
-    top: 20px;
-    right: 5%;
-    font-size: 1.1em;
-}
-
-.language-switcher a {
-    text-decoration: none;
-    color: #ff69b4;
-    padding: 5px;
-}
-
-.language-switcher .lang-active {
-    font-weight: bold;
-    border-bottom: 2px solid #ff69b4;
+.hero-section {
+    background-color: #c0c0c0; /* Ашық қызғылт фон */
+    min-height: 500px;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center; /* Ортасына орналастыру */
+    align-items: center; /* Ортасына орналастыру */
+    position: relative;
+    text-align: center;
 }
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 50px;
+    max-width: 100%; /* Контенттің максималды ені */
+    text-align: center;
 }
 
 .hero-text {
@@ -62,21 +57,18 @@ section {
 }
 
 .hero-section h1 {
-    font-size: 2.5em;
+    font-size: 3.5em; /* Мәтіннің мөлшерін үлкейту */
     margin-top: 0;
     text-align: center;
     line-height: 1.2; /* Уменьшаем расстояние между строками */
 }
 
-.hero-text h1 br {
-    display: block;
-    content: "";
-    margin-top: 10px;
-}
-
 /* Блок для навигационных кнопок */
 .main-nav {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Батырмаларды бір бағанға орналастыру */
+    align-items: center; /* Батырмаларды ортасына орналастыру */
 }
 
 .nav-row {
@@ -86,40 +78,24 @@ section {
 }
 
 .nav-button {
-    background-color: #ff69b4;
-    color: white;
-    padding: 10px 20px;
+    background-color: #1A2A6C;
+    color: #f4f4f4;
+    padding: 15px 30px; /* Батырманың мөлшерін ұлғайту */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
-    margin: 5px;
-    font-size: 1.1em;
+    margin: 10px;
+    font-size: 1.5em; /* Шрифт мөлшерін үлкейту */
     text-align: center;
-    width: 200px; /* Задаем одинаковую ширину для всех кнопок */
+    width: 250px; /* Батырманың ені */
     display: inline-block;
 }
 
 .nav-button:hover {
-    background-color: #e55a9f;
+    background-color: #1A2A6C;
 }
 
-
-/* Увеличение размера изображения в hero-секции */
-.hero-image-placeholder {
-    width: 100%;
-    max-width: 450px; /* Увеличиваем размер */
-    min-height: 350px; /* Увеличиваем минимальную высоту */
-    background-color: #ffe8f2;
-    border: 1px dashed #ff69b4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
 
 /* 2-5. Каталог стилі */
 .catalog-section {
@@ -162,7 +138,7 @@ section {
 
 /* 6. О нас стилі */
 .about-section {
-    background-color: #e6f7ff;
+    background-color: #c0c0c0;
 }
 
 .about-content {
